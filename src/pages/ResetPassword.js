@@ -1,3 +1,0 @@
-// ResetPasswordPage
-//ResetPasswordPage
-//Reset password
