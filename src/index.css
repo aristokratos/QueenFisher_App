@@ -43,3 +43,31 @@ main h1 {
     padding: 30% 10% 0 !important;
   }
 }
+
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.7;
+  overflow-x: auto;
+}
+
+.container {
+  width: 100%;
+  max-width: 1240px;
+  margin-inline: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
