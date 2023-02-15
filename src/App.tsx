@@ -3,8 +3,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import TimeTable from './Timetable/Timetable';
 import CreateTable from './CreateTable/Createtable';
 import { ConfirmDetails } from './ConfirmDetails/ConfirmDetails';
-import LandingPage from './pages/landingPage/LandingPage';
 import Register from '../src/components/register/Register';
+import LandingPage from './pages/landingPage/LandingPage';
 
 
 const App: React.FC = () => {
