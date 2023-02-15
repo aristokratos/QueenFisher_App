@@ -1,0 +1,56 @@
+.body {
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Createtable {
+  text-align: left;
+  padding-left: 1%;
+  width: 22rem;
+}
+.header {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.para {
+  margin-bottom: 20px;
+  color: gray;
+}
+
+/* .Form{
+    background-color: brown;
+
+} */
+
+.Table {
+  padding: 5px 0px 5px 0px;
+}
+
+.H4 {
+  margin-bottom: 10px;
+}
+
+.Input {
+  width: 20rem;
+  padding: 8px;
+  border-radius: 7px;
+}
+
+.button {
+  padding: 7px 0px;
+  width: 21.2rem;
+  background-color: brown;
+  margin-top: 10px;
+  border-radius: 5px;
+  border-color: brown;
+  color: white;
+}
+
+.Image {
+  position: absolute;
+  top: 10%;
+  right: 37%;
+}

@@ -1,9 +1,9 @@
 import './Register.css';
 import { Link } from "react-router-dom"
-import { RxPerson } from 'react-icons/rx'
-import { CiMail } from 'react-icons/ci'
-import { MdOutlinePhone} from 'react-icons/md'
-import { IoLockClosedOutline} from 'react-icons/io5'
+import { RxPerson } from "react-icons/rx"
+import { CiMail } from "react-icons/ci"
+import { MdOutlinePhone} from "react-icons/md"
+import { IoLockClosedOutline} from "react-icons/io5"
 import LogoImg from './LogoImg.png'
 
 
