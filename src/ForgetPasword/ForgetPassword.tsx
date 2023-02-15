@@ -1,5 +1,6 @@
-import { FormEvent, useState } from 'react'
-import '../SignUpManually/SignUpManually.css'
+import { FormEvent, useState } from 'react';
+import '../SignUpManually/SignUpManually.css';
+import queenfisher from '../images/queenfisher-logo.png';
 
 const ForgetPassword = () => {
   const [emailAddress, setEmailAddress] = useState("")
@@ -40,9 +41,7 @@ const ForgetPassword = () => {
   return (
     <>
       <div className='header'>
-        <img src='https://thumbs.dreamstime.com/z/vector-illustration-salad-includes-baked-slices-tomato-eggplant-carrot-green-beans-rosemary-sprigs-concept-161224885.jpg'
-          alt='logo' />
-        <h2>Queenfisher</h2>
+      <img style={{ width: "150px", marginRight: "85px" }} src={queenfisher} alt='logo' />
       </div>
       <div style={{ width: "350px", margin: "0 auto", padding: "20px", border: "1px solid #ccc", borderRadius: "10px", backgroundColor: "#fff", boxShadow: "2px 2px 10px #ccc" }}>
         <div className="card-header">
