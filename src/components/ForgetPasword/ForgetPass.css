@@ -6,6 +6,13 @@
   margin: 0 auto;
   font-size: 30px;
 }
+.already-have-acc {
+  display: flex;
+  position: absolute;
+  color: #101828;
+  margin-top: 37rem;
+  font-weight: 500;
+}
 
 .header img {
   color: #ff7e4f;

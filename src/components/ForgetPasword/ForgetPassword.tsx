@@ -2,12 +2,14 @@ import { FormEvent, useState } from 'react';
 import { CiMail } from 'react-icons/ci';
 import LogoImg from './LogoImg.png'
 import '../ForgetPasword/ForgetPass.css';
+import { Link } from 'react-router-dom';
 const ForgetPassword = () => {
   const [emailAddress, setEmailAddress] = useState("")
   const [Error, setError] = useState("")
 
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+
     if (!emailAddress) {
       setError("please enter your email address")
       return;
@@ -69,16 +71,16 @@ const ForgetPassword = () => {
 
               <div className='btn-div'>
                 <button className='registration-btn' type='submit'>Reset Password</button>
+
               </div>
+
             </form>
-
-
-
 
           </div>
 
 
         </div>
+
       </div>
     </>
   )
