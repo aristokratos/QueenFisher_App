@@ -1,4 +1,4 @@
-.header {
+.headers {
   display: flex;
   color: #272a33;
   justify-content: center;
@@ -6,6 +6,7 @@
   margin: 0 auto;
   font-size: 30px;
 }
+
 .already-have-acc {
   display: flex;
   position: absolute;
@@ -18,17 +19,17 @@
   color: #ff7e4f;
 }
 
-.logo {
+.logos {
   width: 80px;
   height: 45px;
   padding-top: 20px;
 }
 
-.header-name {
+.headername {
   margin-top: 2rem;
 }
 
-.wrapper {
+.wrappers {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -42,19 +43,47 @@
   margin-bottom: 5rem;
 }
 
-.wrapper h3 {
+.link {
+  color: #772917;
+  text-decoration: none;
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+  font-weight: 600;
+  text-align: center;
+  padding: 150px;
+  margin-top: 50px;
+}
+
+.wrap {
+  padding: 20px;
+}
+
+.title {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  color: #012a4a;
+  margin-bottom: 2rem;
+  margin-top: -6rem;
+  padding-top: 50px;
+}
+
+.wrappers h3 {
+  padding-top: -100px;
   text-align: center;
   font-size: medium;
 }
 
-.register-field-container {
+.registercontainer {
   justify-content: center;
   align-items: center;
   background-color: #ffffff;
   display: flex;
 }
 
-.registration-email {
+.registrationemail {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 600;
@@ -64,7 +93,7 @@
   margin: 1rem 0;
 }
 
-.input-field {
+.inputfield {
   width: 383px;
   height: 40px;
   background: #ffffff;
@@ -75,18 +104,18 @@
   font-weight: 500;
 }
 
-.register-icon {
+.registericon {
   margin-left: 0.7rem;
   font-size: 1.3rem;
   margin-top: -2.1rem;
   color: #98a2b3;
 }
 
-.btn-div {
+.btndiv {
   margin-top: 2.5rem;
 }
 
-.registration-btn {
+.registrationbtn {
   color: white;
   background-color: #772917;
   border: none;
