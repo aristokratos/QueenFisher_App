@@ -1,6 +1,6 @@
 import { FormEvent, useState } from 'react'
 import '../SignUpManually/SignUpManually.css'
-//import Link from 'react';
+
 const ForgetPassword = () => {
   const [emailAddress, setEmailAddress] = useState("")
   const [Error, setError] = useState("")

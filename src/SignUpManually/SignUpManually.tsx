@@ -4,19 +4,11 @@ import '../SignUpManually/SignUpManually.css'
 const SignUpManually: React.FC = () => {
     
 
-const initialState = {
-  FullName: '',
-  Email: '',
-  Password: '',
-  ConfirmPassword: '',
-  Address: '',
-  PhoneNumber: '',
-};
+
 
 const [fullName, setFullName] = useState<string>();
 const [email, setEmail] = useState<string>();
 const [password, setPassword] = useState<string>();
-const [address, setAddress] = useState<string>();
 const [phoneNumber, setPhoneNumber] = useState<string>();
 const [confirmPassword, setConfirmPassword] = useState<string>();
 const [errorMessage, setErrorMessage] = useState<string>();
@@ -25,17 +17,14 @@ const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
   event.preventDefault();
   debugger;
 
-  //const { FullName, Email, Password, ConfirmPassword, Address, PhoneNumber } = state;
+  
 
   if (!fullName || !email || !password || !phoneNumber || !confirmPassword) {
     setErrorMessage('Please fill out all fields');
     return;
   }
 
-  // if (!/^[A-Za-z]$/.test(fullName)) {
-  //   setErrorMessage('First and last names can only contain letters');
-  //   return;
-  // }
+  
 
   if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
     setErrorMessage('Please enter a valid email address');
@@ -64,7 +53,6 @@ const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
         fullName: fullName,
         email: email,
         password: password,
-        address: address,
         phoneNumber: phoneNumber,
       }),
     });
