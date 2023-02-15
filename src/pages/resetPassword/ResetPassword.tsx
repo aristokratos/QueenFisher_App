@@ -17,20 +17,20 @@ const ResetPassword = () => {
 return (
     <div className="reset_pawd_card">
       <div className="reset_pawd_img">
-        {/* <img src={vector} className="vec" alt="vector" /> */}
-        <img src={queen} alt="queen" className='queen' />
+
+        <img src={queen} alt="queen" className='reset_pawd_queen' />
       </div>
       <form action="" className="reset_pawd_form" onSubmit={handleSubmit}>
-        <div className="center">
+        <div className="reset_pawd_center">
           <h4>Reset Password</h4>
         </div>
 
-        <div className="fieldsContainer">
+        <div className="reset_pawd_fieldsContainer">
           <label className="reset_pawd_label">New Password</label>
 
           <input
             type="password"
-            className="fields"
+            className="reset_pawd_fields"
             placeholder="Enter your new password"
           />
         </div>
@@ -40,7 +40,7 @@ return (
 
           <input
             type="password"
-            className="fields"
+            className="reset_pawd_fields"
             placeholder="Confirm Password"
           />
         </div>
