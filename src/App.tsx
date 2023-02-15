@@ -12,8 +12,8 @@ import RecipeTimetable from '../src/pages/RecipeTimetable';
 function App() {
   return (
     <React.Fragment>
-    <Router>
-      <Routes>
+      <Router>
+        <Routes>
           <Route
             path="/timetable"
             element={(<TimeTable />) as React.ReactElement}
@@ -29,9 +29,11 @@ function App() {
           <Route index={true} element={<LandingPage />} />
           <Route path="register" element={<Register />} />
           <Route
-            path="/"
+            path="/recipetimetable"
             element={(<RecipeTimetable />) as React.ReactElement}
           />
+          <Route path="resetpassword" element={<ResetPassword />} />
+          <Route path="update-password" element={<UpdatePassword />} />
         </Routes>
       </Router>
     </React.Fragment>
