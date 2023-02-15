@@ -2,7 +2,6 @@ import { FormEvent, useState } from 'react';
 import { CiMail } from 'react-icons/ci';
 import LogoImg from './LogoImg.png'
 import '../ForgetPasword/ForgetPass.css';
-import { Link } from 'react-router-dom';
 const ForgetPassword = () => {
   const [emailAddress, setEmailAddress] = useState("")
   const [Error, setError] = useState("")
