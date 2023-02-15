@@ -5,7 +5,7 @@ import CreateTable from './CreateTable/Createtable';
 import { ConfirmDetails } from './ConfirmDetails/ConfirmDetails';
 import Register from '../src/components/register/Register';
 import LandingPage from './pages/landingPage/LandingPage';
-import SignUpManually from './SignUpManually/SignUpManually';
+
 
 import UpdatePassword from './components/UpdatePassword';
 import ForgetPassword from './components/ForgetPasword/ForgetPassword';
@@ -14,20 +14,19 @@ import ForgetPassword from './components/ForgetPasword/ForgetPassword';
 const App: React.FC = () => {
   return (
     <React.Fragment>
-    <Router>
-      <Routes>
-        <Route  path="/timetable" element={(<TimeTable />) as React.ReactElement} />
-        <Route  path="/create" element={(<CreateTable />) as React.ReactElement} />
-        <Route  path="/Continue" element={(<ConfirmDetails />) as React.ReactElement} />
-        <Route index={true} element={<LandingPage />} />
-        <Route path="register" element={<Register />} />
-        <Route path="signin" element={<SignUpManually />} />
-        <Route path="forgetPassword" element={<ForgetPassword />} />
+      <Router>
+        <Routes>
+          <Route path="/timetable" element={(<TimeTable />) as React.ReactElement} />
+          <Route path="/create" element={(<CreateTable />) as React.ReactElement} />
+          <Route path="/Continue" element={(<ConfirmDetails />) as React.ReactElement} />
+          <Route index={true} element={<LandingPage />} />
+          <Route path="register" element={<Register />} />
+          <Route path="forgetPassword" element={<ForgetPassword />} />
 
-        <Route path="register" element={ <Register/>}/>
-        <Route path="update-password" element={ <UpdatePassword/>}/>
-      </Routes>
-    </Router>
+          <Route path="register" element={<Register />} />
+          <Route path="update-password" element={<UpdatePassword />} />
+        </Routes>
+      </Router>
     </React.Fragment>
   );
 };
