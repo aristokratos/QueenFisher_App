@@ -1,9 +1,18 @@
-//import ForgetPassword from "./ForgetPasword/ForgetPassword";
-import SignUpManually from "./SignUpManually/SignUpManually";
-//import SignUpManually from "./SignUpManually/SignUpManually";
+import React from 'react';
+import Register from '../src/components/register/Register';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import LandingPage from './pages/landingPage/LandingPage';
 
-function App() {
-  return <div><SignUpManually/></div>;
-}
+const App: React.FC = () => {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route index={true} element={<LandingPage />} />
+        <Route path="register" element={ <Register/>}/>
+      </Routes>
+    </BrowserRouter>
+  );
+};
+
 
 export default App;
