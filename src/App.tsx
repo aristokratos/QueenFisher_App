@@ -28,6 +28,10 @@ function App() {
           />
           <Route index={true} element={<LandingPage />} />
           <Route path="register" element={<Register />} />
+          <Route
+            path="/"
+            element={(<RecipeTimetable />) as React.ReactElement}
+          />
         </Routes>
       </Router>
     </React.Fragment>
