@@ -6,8 +6,9 @@ import { ConfirmDetails } from './ConfirmDetails/ConfirmDetails';
 import Register from '../src/components/register/Register';
 import LandingPage from './pages/landingPage/LandingPage';
 import SignUpManually from './SignUpManually/SignUpManually';
-import ForgetPassword from './components/ForgetPasword/ForgetPassword';
+
 import UpdatePassword from './components/UpdatePassword';
+import ForgetPassword from './components/ForgetPasword/ForgetPassword';
 
 
 const App: React.FC = () => {

@@ -3,6 +3,8 @@
   color: #272a33;
   justify-content: center;
   column-gap: 0.7rem;
+  margin: 0 auto;
+  font-size: 30px;
 }
 
 .header img {
@@ -25,12 +27,17 @@
   justify-content: center;
   align-items: center;
   width: 479px;
-  height: 704px;
+  height: 350px;
   border-radius: 24px;
   box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.9);
   margin-left: 28rem;
   margin-top: 2rem;
   margin-bottom: 5rem;
+}
+
+.wrapper h3 {
+  text-align: center;
+  font-size: medium;
 }
 
 .register-field-container {

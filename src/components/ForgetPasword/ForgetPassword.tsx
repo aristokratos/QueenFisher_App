@@ -1,7 +1,7 @@
 import { FormEvent, useState } from 'react';
 import { CiMail } from 'react-icons/ci';
 import LogoImg from './LogoImg.png'
-import '../forgetPassword/forgetPass.css'
+import '../ForgetPasword/ForgetPass.css';
 const ForgetPassword = () => {
   const [emailAddress, setEmailAddress] = useState("")
   const [Error, setError] = useState("")
@@ -44,15 +44,16 @@ const ForgetPassword = () => {
       <div>
         <div className='header'>
           <img src={LogoImg} className="logo" />
-          <h1 className='header-name'>
+          <h2 className='header-name'>
             Queenfisher
-          </h1>
+          </h2>
         </div>
         <div className='wrapper'>
 
           <div className='register-title'>
-            Get Started with Queenfisher
+            Forget Password
           </div>
+          <h3>Enter the email associated with your account and we'll send an email with instruction to reset your password</h3>
           <div className='register-field-container'>
             {Error && (<div className="forgot-password-error-message">{Error}</div>)}
 
