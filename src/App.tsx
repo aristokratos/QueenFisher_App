@@ -5,6 +5,7 @@ import CreateTable from './CreateTable/Createtable';
 import { ConfirmDetails } from './ConfirmDetails/ConfirmDetails';
 import Register from '../src/components/register/Register';
 import LandingPage from './pages/landingPage/LandingPage';
+
 import UpdatePassword from './components/UpdatePassword';
 
 
