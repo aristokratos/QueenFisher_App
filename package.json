@@ -10,7 +10,8 @@
     "lint": "eslint --fix --cache",
     "format": "prettier --write \"**/*.+(ts|js|jsx|json|yml|yaml|css|md|vue)\" --cache",
     "precommit": "npm run format && npm run lint && git add -A",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "start": "react-scripts start"
   },
   "lint-staged": {
     "*.+(ts|tsx)": "eslint --fix --cache",
@@ -18,7 +19,9 @@
   },
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-responsive-modal": "^6.4.1",
+    "react-scripts": "^5.0.1"
   },
   "devDependencies": {
     "@types/react": "^18.0.27",
