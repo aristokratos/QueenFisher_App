@@ -5,6 +5,8 @@ import CreateTable from './CreateTable/Createtable';
 import { ConfirmDetails } from './ConfirmDetails/ConfirmDetails';
 import LandingPage from './pages/landingPage/LandingPage';
 import Register from '../src/components/register/Register';
+import Register from '../src/components/register/Register';
+import LandingPage from './pages/landingPage/LandingPage';
 
 
 const App: React.FC = () => {
@@ -12,13 +14,13 @@ const App: React.FC = () => {
     <React.Fragment>
     <Router>
       <Routes>
-
         <Route  path="/timetable" element={(<TimeTable />) as React.ReactElement} />
         <Route  path="/create" element={(<CreateTable />) as React.ReactElement} />
         <Route  path="/Continue" element={(<ConfirmDetails />) as React.ReactElement} />
         <Route index={true} element={<LandingPage />} />
         <Route path="register" element={ <Register/>}/>
-    
+        <Route index={true} element={<LandingPage />} />
+        <Route path="register" element={ <Register/>}/>
       </Routes>
     </Router>
     </React.Fragment>
