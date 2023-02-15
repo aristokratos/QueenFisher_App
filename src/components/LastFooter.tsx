@@ -1,8 +1,8 @@
 import React from 'react';
 import LastFooterImage from '../images/Plate.png'
 import { Link } from 'react-router-dom'
-import { RiFacebookFill, RiTwitterFill, RiLinkedinFill } from 'react-icons/ri'
-import { AiOutlineGoogle } from 'react-icons/ai'
+import { RiFacebookFill, RiTwitterFill, RiLinkedinFill } from "react-icons/ri"
+import { AiOutlineGoogle } from "react-icons/ai"
 import Logo from '../images/queenfisher-logo.png'
 
 interface LastFooterProps {}
