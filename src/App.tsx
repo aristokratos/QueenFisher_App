@@ -11,6 +11,8 @@ import ResetPassword from './pages/resetPassword/ResetPassword';
 import UpdatePassword from './components/UpdatePassword';
 import RecipeTimetable from '../src/pages/RecipeTimetable';
 import ForgetPassword from './components/ForgetPasword/ForgetPassword';
+import Login from './pages/loginpage/Login';
+import VerifyEmail from './pages/verifypage/VerifyEmail';
 
 function App() {
   return (
@@ -31,6 +33,9 @@ function App() {
           />
           <Route index={true} element={<LandingPage />} />
           <Route path="register" element={<Register />} />
+          <Route path="login" element={<Login />} />
+          <Route path="verify-email" element={<VerifyEmail/>}/>
+
           <Route
             path="/recipetimetable"
             element={(<RecipeTimetable />) as React.ReactElement}
