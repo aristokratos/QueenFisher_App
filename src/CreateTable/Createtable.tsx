@@ -2,6 +2,7 @@ import React from 'react';
 import classes from '../CreateTable/CreateTable.module.css';
 import Vector from '../assets/Vector.png';
 import { Link } from 'react-router-dom';
+import calenderIcon from '../assets/calenderIcon.png';
 
 const CreateTable: React.FC = () => {
     return (
@@ -17,8 +18,9 @@ const CreateTable: React.FC = () => {
        
         <div className={classes.Table}>
         <h4 className={classes.H4}>Meal Type</h4>
-        <input className={classes.Input} type="text" id="" value="select">
-        </input>
+        <label className= {classes.Inputimage}>
+        <input className={classes.Input} type="text" id="MealType" value="select">
+        </input></label>
         </div>
 
         
@@ -42,9 +44,8 @@ const CreateTable: React.FC = () => {
         </input>
         </div>
 
-        <button className={classes.button}><Link to="/continue" >Continue</Link></button>
+        <button className={classes.button}><Link to="/continue">Continue</Link></button>
      </form>
-
     </div>
     );
   }
