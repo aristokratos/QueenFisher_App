@@ -1,0 +1,60 @@
+.meal-table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+.meal-table-container {
+  margin-left: 50px;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+.meal-table-arrow {
+  width: 15px;
+  margin-top: 6px;
+}
+.meal-arrow-span {
+  display: flex;
+  justify-content: left;
+}
+.meal-span-table {
+  margin-left: 10px;
+}
+.meal-table-overall {
+  margin-top: 30px;
+}
+.meal-table-solution {
+  color: #adadad;
+  margin-bottom: 10px;
+}
+.meal-td {
+  display: flex;
+  background-color: white;
+
+  width: 100%;
+}
+.meal-td-child {
+  width: 100%;
+  padding-left: 30px;
+  border: 1px solid #ccc;
+}
+.body-meal {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.meal-th {
+  display: flex;
+  width: 100%;
+}
+
+.name-th {
+  width: 100%;
+  text-align: left;
+  padding-left: 30px;
+
+  color: white;
+
+  background-color: #772917;
+  border: 1px solid #ccc;
+}
