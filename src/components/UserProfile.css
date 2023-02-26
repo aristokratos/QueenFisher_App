@@ -1,0 +1,116 @@
+.A-setting {
+  position: absolute;
+  width: 276px;
+  height: 45px;
+  left: 355px;
+  top: 128px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 140%;
+  letter-spacing: 0.25px;
+  color: #101828;
+}
+
+.A-border {
+  position: absolute;
+  width: 979px;
+  height: 2px;
+  left: 355px;
+  top: 181px;
+  background: #eeeeee;
+}
+
+.A-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px 32px;
+  gap: 32px;
+  position: absolute;
+  width: 687px;
+  height: 658px;
+  left: 510px;
+  top: 239px;
+  background: #ffffff;
+}
+
+.CoverPhoto {
+  /* position: absolute; */
+  width: 623px;
+  height: 132px;
+  left: 0px;
+  top: 0px;
+  /* background: red; */
+  background: url(../images/coverphoto.png), #e0eaff;
+  border-radius: 8px;
+}
+
+.ProfilePoto {
+  position: absolute;
+  width: 100px;
+  background: url(../images/userAvater.jpg), #e0eaff;
+  height: 100px;
+  left: 261.5px;
+  top: 82px;
+  /* background: yellowgreen; */
+  border-radius: 200px;
+}
+
+.A-input {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  padding: 12px 16px;
+  gap: 8px;
+  width: 623px;
+  height: 44px;
+  font-family: 'Inter', sans-serif;
+
+  background: #ffffff;
+
+  border: 1px solid #98a2b3;
+  border-radius: 6px;
+
+  /* Inside auto layout */
+
+  /* flex: none; */
+  /* order: 1; */
+  /* flex-grow: 0; */
+}
+
+::placeholder {
+  padding: 0px;
+}
+.btn-update {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 16px;
+  gap: 8px;
+
+  width: 623px;
+  height: 44px;
+
+  /* Orange 800 */
+
+  background: #932f19;
+  border-radius: 6px;
+  border: none;
+  color: #ffffff;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.disabled-input {
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
