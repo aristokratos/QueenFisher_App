@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { FiExternalLink } from 'react-icons/fi'
+import { FiExternalLink } from "react-icons/fi"
 import Image from '../images/image 1.png'
 import Image2 from '../images/image 2.png'
 import Image3 from '../images/image 3.png'
