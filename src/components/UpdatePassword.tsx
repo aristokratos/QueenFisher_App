@@ -21,19 +21,9 @@ function UpdatePassword() {
   };
 
 
-  
-// function App() {
-//   return (
-//     <div>
-//       <PasswordInput id="password1" label="Password 1" />
-//       <PasswordInput id="password2" label="Password 2" />
-//       <PasswordInput id="password3" label="Password 3" />
-//     </div>
-//   );
-// }
-
   return (
     <>
+    <div className="overall">
       <h1 className="p-setting">Password Settings</h1>
       <div className="border"></div>
 
@@ -96,6 +86,7 @@ function UpdatePassword() {
             <input type="submit" value="update" className="btnupdate" />
           </form>
         </div>
+      </div>
       </div>
     </>
   );

@@ -5,10 +5,9 @@ import CreateTable from './CreateTable/Createtable';
 import { ConfirmDetails } from './ConfirmDetails/ConfirmDetails';
 import Register from '../src/components/register/Register';
 import LandingPage from './pages/landingPage/LandingPage';
-
-
 import ResetPassword from './pages/resetPassword/ResetPassword';
 import UpdatePassword from './components/UpdatePassword';
+import UserProfile from './components/UserProfile';
 import RecipeTimetable from '../src/pages/RecipeTimetable';
 import ForgetPassword from './components/ForgetPasword/ForgetPassword';
 import Login from './pages/loginpage/Login';
@@ -38,16 +37,13 @@ function App() {
           <Route path="register" element={<Register />} />
           <Route path="login" element={<Login />} />
           <Route path="verify-email" element={<VerifyEmail/>}/>
-
-          <Route
-            path="/recipetimetable"
-            element={(<RecipeTimetable />) as React.ReactElement}
-          />
+          <Route path="/recipetimetable" element={(<RecipeTimetable />) as React.ReactElement}/>
           <Route path="resetpassword" element={<ResetPassword />} />
           <Route path="update-password" element={<UpdatePassword />} />
           <Route path="forgetpassword" element={<ForgetPassword />} />
           <Route path="usertable" element={<UserPopulatedTable/>} />
           <Route path="mealtable" element={<MealPopulatedTable/>}/>
+          <Route path="user-profile" element={ <UserProfile />} />
         </Routes>
       </Router>
     </React.Fragment>
