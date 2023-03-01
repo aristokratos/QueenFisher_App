@@ -1,7 +1,6 @@
 import {Column, useTable} from 'react-table';
 import React, {useMemo, useState, useEffect} from 'react'
 import { IMeal} from "./mealType";
-import axios from 'axios';
 import {MealService} from './MealService';
 import './MealPopulatedTable.css';
 import arrow from "../../assets/arrow.png";

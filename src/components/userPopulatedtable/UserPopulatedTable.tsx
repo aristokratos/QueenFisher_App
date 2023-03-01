@@ -1,7 +1,6 @@
 import {Column, useTable} from 'react-table';
 import React, {useMemo, useState, useEffect} from 'react'
 import { IUser } from "./UserTypes";
-import axios from 'axios';
 import './UserPopulatedTable.css';
 import {UserService} from './UserService';
 import './UserPopulatedTable.css';
