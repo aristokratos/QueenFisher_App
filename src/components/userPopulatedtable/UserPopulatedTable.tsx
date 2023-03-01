@@ -41,6 +41,7 @@ const UserPopulatedTable = () => {
             <th className='child-user'>Name</th>
             <th className='child-user'>Number</th>
             <th className='child-user'>Email</th>
+        
 
             </div>
             
