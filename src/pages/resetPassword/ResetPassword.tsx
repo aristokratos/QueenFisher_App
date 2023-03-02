@@ -20,6 +20,7 @@ return (
 
         <img src={queen} alt="queen" className='reset_pawd_queen' />
       </div>
+      <div className='reset-pawd-form-contain'>  
       <form action="" className="reset_pawd_form" onSubmit={handleSubmit}>
         <div className="reset_pawd_center">
           <h4>Reset Password</h4>
@@ -45,9 +46,11 @@ return (
           />
         </div>
 
+        
+        
         <div className="reset_pawd_button">
           <button
-            type="submit"
+            // type="submit"
             className="reset_pawd_action"
             onClick={onOpenProfile}
           >
@@ -55,6 +58,7 @@ return (
           </button>
         </div>
       </form>
+      </div>
       <Modal open={profile} onClose={onCloseProfile} closeIcon={null} center >
          <ResetPasswordModal onClick={onCloseProfile}/>
       </Modal>
