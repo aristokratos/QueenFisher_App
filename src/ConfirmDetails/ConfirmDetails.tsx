@@ -5,10 +5,10 @@ import Vector from '../assets/Vector.png';
 export const ConfirmDetails: React.FC = () => {
     return ( 
         <div className={classes.body}>
-        <div className={classes.Confirm}>
-        <h3 className={classes.h2}>Confirmation Details</h3>
-        <p className={classes.para}>Make sure you confirm all items</p>
-        </div>
+           <div className={classes.Confirm}>
+             <h3 className={classes.h2}>Confirmation Details</h3>
+             <p className={classes.para}>Make sure you confirm all items</p>
+            </div>
 
         <div className={classes.Meal}>
             <p className={classes.para}>Meal Type</p>

@@ -1,0 +1,75 @@
+.container {
+  position: relative;
+  width: 90vh;
+  height: 80vh;
+  background-color: #f5f5f5;
+  margin: auto;
+  margin-top: 50px;
+  box-shadow: 0px 0px 3px #b1b1b1, 0px 0px 3px #b1b1b1;
+  border-radius: 6px;
+  border: none;
+}
+.confirm {
+  padding: 20px;
+}
+.confirm p {
+  font-size: 14px;
+  color: #cbcfd5;
+  margin-top: 6px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.confirm h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.Meal {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+.para {
+  display: flex;
+  /* justify-content: space-between; */
+  padding: 15px;
+}
+.first {
+  display: inline;
+  width: 50%;
+  margin-left: 20px;
+}
+.first p {
+  font-size: 13px;
+  font-weight: 400;
+  /* line-height: 22.4px; */
+  color: #c8ccd6;
+}
+.first h3 {
+  font-size: 20px;
+  font-weight: 500;
+  /* line-height: 33.6px; */
+}
+.next {
+  margin-right: 100px;
+  align-items: baseline;
+}
+.next p {
+  font-size: 13px;
+  font-weight: 400;
+  color: #c8ccd6;
+}
+.next h3 {
+  font-size: 20px;
+  font-weight: 500;
+}
+.btn {
+  width: 90%;
+  background: #772917;
+  margin: auto;
+  border-radius: 6px;
+  color: #fff;
+  font-size: small;
+  font-weight: 400;
+  padding: 7px;
+}

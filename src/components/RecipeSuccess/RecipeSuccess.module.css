@@ -1,0 +1,32 @@
+.successCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 100px 400px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 40px 20px 30px 20px;
+  border-radius: 15px;
+}
+
+.button {
+  margin-top: 20px;
+  width: 100%;
+  height: 45px;
+  border-radius: 6px;
+  background: #f2f4f7;
+  color: black;
+  text-align: center;
+  padding: 2px;
+  border-radius: 10px;
+}
+
+.head2 {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.para {
+  text-align: center;
+  font-size: smaller;
+  margin: 20px 0 20px 0;
+}

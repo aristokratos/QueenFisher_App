@@ -1,0 +1,259 @@
+.create-recipe {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  margin: auto;
+  margin-top: 15px;
+  width: 50%;
+  height: 95vh;
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+.title {
+  margin-left: 25px;
+  margin-top: 12px;
+}
+.title p {
+  font-size: 20px;
+  font-weight: 600;
+}
+.title span {
+  font-size: 10px;
+  font-weight: 300;
+  color: rgb(225, 221, 221);
+}
+.meal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 5px;
+}
+.ingredient {
+  margin-left: 25px;
+  display: flex;
+  flex-direction: column;
+}
+.ingredients {
+  width: 270px;
+  border-radius: 6px;
+  height: 30px;
+  font-size: 10px;
+  outline: none;
+  border: 1px solid #ccc;
+}
+.picture {
+  margin-top: 5px;
+  margin-left: 25px;
+  display: flex;
+}
+.pic-inner {
+  width: 290px;
+  border-radius: 10px;
+  /* height: 105px; */
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.pic-inner input {
+  margin-top: 5px;
+  font-size: 12px;
+  border-radius: 7px;
+  height: 35px;
+
+  /* gap: 8px; */
+}
+.procedure {
+  margin-top: 5px;
+  margin-left: 25px;
+  display: flex;
+  flex-direction: column;
+  outline: none;
+  justify-content: space-between;
+  /* border: 1px solid #ccc; */
+}
+.procedure p {
+  margin-top: 2px;
+  font-size: 15px;
+}
+.proMenu {
+  width: 370px;
+  border-radius: 10px;
+  font-size: 10px;
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.proMenu select {
+  width: 270px;
+  height: 30px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+.proMenu textarea {
+  width: 270px;
+  height: 30px;
+  border-radius: 6px;
+  outline: none;
+  border: 1px solid #ccc;
+}
+.recipe-name {
+  margin-top: 10px;
+  margin-left: 25px;
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+}
+.recipe-name input {
+  margin-top: 2px;
+  width: 100%;
+  height: 30px;
+  font-size: 10px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #ccc;
+}
+
+.summary {
+  margin-left: 25px;
+  font-weight: 200;
+  display: flex;
+  flex-direction: column;
+}
+.summary textarea {
+  width: 100%;
+  height: 100px;
+  border-radius: 10px;
+  font-size: 10px;
+  font-weight: 100;
+  outline: none;
+  border: 1px solid #ccc;
+}
+.btn {
+  margin-top: 20px;
+  width: 96%;
+  height: 45px;
+  border-radius: 6px;
+  background: #772917;
+  color: white;
+  margin-left: 24px;
+  text-align: center;
+  padding: 5px;
+}
+/* .recipe-name input {
+    margin-top: 2px;
+    width: 100%;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  } */
+
+/* .mealType {
+    margin-top: 2px;
+    width: 10%;
+    font-size: 10px;
+  } */
+
+/* .upload-picture {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .upload-picture input[type="file"] {
+    margin-top: 5px;
+    font-size: 16px;
+  }
+  
+  .recipe-picture {
+    margin-top: 2px;
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+  }
+  
+  .upload-video {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .upload-video input[type="file"] {
+    margin-top: 5px;
+    font-size: 16px;
+  }
+  
+  .recipe-video {
+    margin-top: 2px;
+    width: 100%;
+    max-height: 300px;
+  }
+  
+  .procedure {
+    margin-top: 1px;
+    font-weight: bold;
+    width: auto;
+  }
+  
+  .procedure textarea {
+    margin-top: 5px;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    height: 50px;
+  }
+  
+  .country {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .country select {
+    margin-top: 5px;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .summary {
+    font-weight: bold;
+  }
+  
+  .summary textarea {
+    margin-top: 0px;
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 80px;
+  }
+  
+  .continue {
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .continue button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 16px;
+    width: 587px;
+    height: 46px;
+    background: #772917;
+    color: #FFFFFF;
+    border-radius: 6px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+  
+  .continue button:hover {
+    background-color: #772917;
+  }
+   */

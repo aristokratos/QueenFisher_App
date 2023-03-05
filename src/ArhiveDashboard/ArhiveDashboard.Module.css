@@ -13,11 +13,11 @@
   letter-spacing: 0.25px;
 }
 /* .header::after{
-    content: "";
-    width: 200px;
-    height: 5px;
-    background: black;
-} */
+      content: "";
+      width: 200px;
+      height: 5px;
+      background: black;
+  } */
 .line {
   position: absolute;
   width: 930px;
@@ -50,11 +50,10 @@
   margin: 10px;
 }
 
-.button {
-  background-color: rgb(245, 232, 207);
-  padding: 12px;
-  color: rgb(183, 111, 85);
-  border-radius: 2px;
-  border: none;
-  margin-top: 30px;
+.head2 {
+  font-weight: bolder;
+}
+
+.para {
+  margin-left: 20px;
 }
