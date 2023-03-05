@@ -16,7 +16,6 @@ import Login from './pages/loginpage/Login';
 import VerifyEmail from './pages/verifypage/VerifyEmail';
 import UserPopulatedTable from './components/userPopulatedtable/UserPopulatedTable';
 import MealPopulatedTable from './components/mealPopulated/MealPopulatedTable';
-
 import RecipeConfirmDetails from './RecipeConfirmDetails/RecipeConfirmDetails';
 import CreateRecipe from './components/CreateRecipe/CreateRecipe/createRecipe';
 import RecipeSuccess from './components/RecipeSuccess/RecipeSuccess';
