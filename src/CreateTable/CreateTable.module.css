@@ -43,13 +43,7 @@
   border-radius: 7px;
 }
 
-.Inputimage {
-  position: relative;
-  padding-left: 30px;
-  background-image: url('src/asset/cancelicon.png');
-}
-
-.button {
+/* .button {
   padding: 7px 0px;
   width: 21.2rem;
   background-color: brown;
@@ -57,7 +51,7 @@
   border-radius: 5px;
   border-color: brown;
   color: white;
-}
+} */
 
 .Image {
   position: absolute;

@@ -1,4 +1,4 @@
- import React from 'react';
+import React from 'react';
 import './ResetPasswordModal.css';
 import layer from '../../assets/Layer 5.png';
 import { Link } from 'react-router-dom';
@@ -28,7 +28,9 @@ const ResetPasswordModal = ({onClick}:{onClick: () => void}) => {
 
     <div className="reset_pawd_button_modal">
         <Link to="/login">
-        <button type="submit" className="reset_pawd_action_modal">Go to login</button>
+        <button
+        //  type="submit" 
+         className="reset_pawd_action_modal">Go to login</button>
         </Link>
       </div>
     </form>

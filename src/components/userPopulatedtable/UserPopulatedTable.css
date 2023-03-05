@@ -1,0 +1,55 @@
+.user-table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+.table-container-user {
+  margin-left: 50px;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+.table-arrow-user {
+  width: 15px;
+  margin-top: 6px;
+}
+.arrow-span-user {
+  display: flex;
+  justify-content: left;
+}
+.span-table-user {
+  margin-left: 10px;
+}
+.table-overall-user {
+  margin-top: 30px;
+}
+.parent-user {
+  display: flex;
+  width: 100%;
+}
+.child-user {
+  width: 100%;
+  text-align: left;
+  border: 1px solid #ccc;
+  background-color: #772917;
+}
+.user-body {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+.user-td {
+  display: flex;
+  width: 100%;
+}
+
+.child-user-td {
+  width: 100%;
+  text-align: left;
+  background-color: white;
+  border: 1px solid #ccc;
+}
+.table-solution-user {
+  color: #adadad;
+  margin-bottom: 10px;
+}
