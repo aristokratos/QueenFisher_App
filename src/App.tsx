@@ -1,3 +1,4 @@
+//import React from 'react';
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import TimeTable from './Timetable/Timetable';
@@ -5,8 +6,8 @@ import CreateTable from './CreateTable/Createtable';
 import { ConfirmDetails } from './ConfirmDetails/ConfirmDetails';
 import Register from '../src/components/register/Register';
 import LandingPage from './pages/landingPage/LandingPage';
-import Recipe from './RecipeDashboard/Recipe';
-import ArhiveDashboard from './ArhiveDashboard/ArhiveDashboard';
+import Recipe from '../src/RecipeDashboard/recipe';
+import ArhiveDashboard from '../src/ArhiveDashboard/ArhiveDashboard';
 import ResetPassword from './pages/resetPassword/ResetPassword';
 import UpdatePassword from './components/UpdatePassword';
 import UserProfile from './components/UserProfile';
@@ -16,9 +17,9 @@ import Login from './pages/loginpage/Login';
 import VerifyEmail from './pages/verifypage/VerifyEmail';
 import UserPopulatedTable from './components/userPopulatedtable/UserPopulatedTable';
 import MealPopulatedTable from './components/mealPopulated/MealPopulatedTable';
-import RecipeConfirmDetails from './RecipeConfirmDetails/RecipeConfirmDetails';
+import RecipeConfirmDetails from '../src/RecipeConfirmDetails/RecipeConfirmDetails';
 import CreateRecipe from './components/CreateRecipe/CreateRecipe/createRecipe';
-import RecipeSuccess from './components/RecipeSuccess/RecipeSuccess';
+import RecipeSuccess from './RecipeSuccess/RecipeSuccess';
 import RecipeWarning from './components/RecipeWarning/RecipeWarning';
 import EmailConfirm from './EmailConfirmation/EmailConfirm';
 

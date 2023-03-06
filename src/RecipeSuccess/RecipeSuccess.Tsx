@@ -1,6 +1,7 @@
 import React from 'react';
-import classes from '../RecipeSuccess/RecipeSuccess.module.css';
-import successIcon from './successIcon.png';
+import classes from './RecipeSuccess.module.css';
+import successIcon from './successIcon.png'
+
 
 const RecipeSuccess: React.FC = () => {
     return ( 
