@@ -23,7 +23,6 @@ import RecipeSuccess from './RecipeSuccess/RecipeSuccess';
 import RecipeWarning from './components/RecipeWarning/RecipeWarning';
 import EmailConfirm from './EmailConfirmation/EmailConfirm';
 
-
 function App() {
   return (
     <React.Fragment>
@@ -44,21 +43,24 @@ function App() {
           <Route index={true} element={<LandingPage />} />
           <Route path="register" element={<Register />} />
           <Route path="login" element={<Login />} />
-          <Route path="verify-email" element={<VerifyEmail/>}/>
-          <Route path="/recipetimetable" element={(<RecipeTimetable />) as React.ReactElement}/>
+          <Route path="verify-email" element={<VerifyEmail />} />
+          <Route
+            path="/recipetimetable"
+            element={(<RecipeTimetable />) as React.ReactElement}
+          />
           <Route path="resetpassword" element={<ResetPassword />} />
           <Route path="update-password" element={<UpdatePassword />} />
           <Route path="forgetpassword" element={<ForgetPassword />} />
-          <Route path="usertable" element={<UserPopulatedTable/>} />
-          <Route path="mealtable" element={<MealPopulatedTable/>}/>
-          <Route path="user-profile" element={ <UserProfile />} />
-          <Route path='recipe' element={<Recipe />} />
-          <Route path='recipe-confirm' element={<RecipeConfirmDetails />} />
-          <Route path='create-recipe' element={< CreateRecipe />} />
-          <Route path='successful' element= {<RecipeSuccess/>} />
-          <Route path='warning' element = {<RecipeWarning/>} />
-          <Route path='Archive' element= {<ArhiveDashboard/>} />
-          <Route path='EmailConfirm' element= {<EmailConfirm/>} />
+          <Route path="usertable" element={<UserPopulatedTable />} />
+          <Route path="mealtable" element={<MealPopulatedTable />} />
+          <Route path="user-profile" element={<UserProfile />} />
+          <Route path="recipe" element={<Recipe />} />
+          <Route path="recipe-confirm" element={<RecipeConfirmDetails />} />
+          <Route path="create-recipe" element={<CreateRecipe />} />
+          <Route path="successful" element={<RecipeSuccess />} />
+          <Route path="warning" element={<RecipeWarning />} />
+          <Route path="Archive" element={<ArhiveDashboard />} />
+          <Route path="EmailConfirm" element={<EmailConfirm />} />
         </Routes>
       </Router>
     </React.Fragment>
