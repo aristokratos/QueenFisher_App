@@ -1,4 +1,3 @@
-//import React from 'react';
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import TimeTable from './Timetable/Timetable';
@@ -12,6 +11,8 @@ import ResetPassword from './pages/resetPassword/ResetPassword';
 import UpdatePassword from './components/UpdatePassword';
 import UserProfile from './components/UserProfile';
 import RecipeTimetable from '../src/pages/RecipeTimetable';
+import UserEmpty from './pages/userEmpty';
+import MealEmpty from './pages/MealEmpty';
 import ForgetPassword from './components/ForgetPasword/ForgetPassword';
 import Login from './pages/loginpage/Login';
 import VerifyEmail from './pages/verifypage/VerifyEmail';
@@ -22,7 +23,6 @@ import CreateRecipe from './components/CreateRecipe/CreateRecipe/createRecipe';
 import RecipeSuccess from './RecipeSuccess/RecipeSuccess';
 import RecipeWarning from './components/RecipeWarning/RecipeWarning';
 import EmailConfirm from './EmailConfirmation/EmailConfirm';
-
 function App() {
   return (
     <React.Fragment>
@@ -47,6 +47,14 @@ function App() {
           <Route
             path="/recipetimetable"
             element={(<RecipeTimetable />) as React.ReactElement}
+          />
+          <Route
+            path="userempty"
+            element={(<UserEmpty />) as React.ReactElement}
+          />
+          <Route
+            path="mealempty"
+            element={(<MealEmpty />) as React.ReactElement}
           />
           <Route path="resetpassword" element={<ResetPassword />} />
           <Route path="update-password" element={<UpdatePassword />} />
