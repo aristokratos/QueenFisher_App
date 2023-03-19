@@ -23,6 +23,8 @@ import CreateRecipe from './components/CreateRecipe/CreateRecipe/createRecipe';
 import RecipeSuccess from './RecipeSuccess/RecipeSuccess';
 import RecipeWarning from './components/RecipeWarning/RecipeWarning';
 import EmailConfirm from './EmailConfirmation/EmailConfirm';
+import EditTimetable from './components/EditTimetable/EditTimetable';
+
 function App() {
   return (
     <React.Fragment>
@@ -35,6 +37,10 @@ function App() {
           <Route
             path="/create"
             element={(<CreateTable />) as React.ReactElement}
+          />
+          <Route
+            path="/edit"
+            element={(<EditTimetable />) as React.ReactElement}
           />
           <Route
             path="/Continue"
