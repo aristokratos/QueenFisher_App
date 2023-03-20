@@ -1,16 +1,19 @@
-import React from 'react';
-import { IMeal } from './mealType';
+import type { IMeal } from './mealType';
 
-export class MealService {
-  private static users: IMeal[] = [
-    { MealName: 'Rice', MealType: 'Igbo', Country: 'Nigeria' },
-    { MealName: 'Beans', MealType: 'Tushar', Country: 'Nigeria' },
-    { MealName: 'Yam', MealType: 'noname', Country: 'Nigeria' },
-  ];
+export const MealService = {
+  baseURL: 'http://dummy-api-address.com',
 
-  public static getAllUsers() {
-    return this.users;
-  }
-}
+  async getMealsByTimetable(fields: Record<string, string>): Promise<IMeal[]> {
+    const { day, time } = fields;
+    const url = `${this.baseURL}/meals?day=${day}&time=${time}`;
 
-export default MealService;
+    const response = await fetch(url);
+    const data = await response.json();
+
+    if (!response.ok) {
+      throw new Error(data.message);
+    }
+
+    return data;
+  },
+};

@@ -12,9 +12,36 @@ interface IState {
 
 const UserPopulatedTable = () => {
   const [data, setData] = useState<IState>({
-    users: MealService.getAllUsers(),
+    users: [],
   });
+
+  const [timetableForm, setTimetableForm] = useState({
+    day: '',
+    time: '',
+  });
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const meals = await MealService.getMealsByTimetable(
+        timetableForm.day,
+        timetableForm.time
+      );
+      setData({ users: meals });
+    };
+    fetchData();
+  }, [timetableForm]);
+
   console.log(data);
+
+  const handleTimetableChange = (
+    event: React.ChangeEvent<HTMLInputElement>
+  ) => {
+    setTimetableForm({
+      ...timetableForm,
+      [event.target.name]: event.target.value,
+    });
+  };
+
   return (
     <div className="meal-table-container">
       <div className="meal-arrow-span">
@@ -32,6 +59,26 @@ const UserPopulatedTable = () => {
             <br /> at a time.
           </p>
         </div>
+        <form>
+          <label>
+            Day:
+            <input
+              type="text"
+              name="day"
+              value={timetableForm.day}
+              onChange={handleTimetableChange}
+            />
+          </label>
+          <label>
+            Time:
+            <input
+              type="text"
+              name="time"
+              value={timetableForm.time}
+              onChange={handleTimetableChange}
+            />
+          </label>
+        </form>
         <table className="meal-table">
           <thead>
             <tr>
