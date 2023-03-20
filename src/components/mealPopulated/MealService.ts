@@ -1,7 +1,7 @@
 import type { IMeal } from './mealType';
 
 export const MealService = {
-  baseURL: 'http://dummy-api-address1.com',
+  baseURL: 'https://localhost:7031/api/GetMeal/All-Meals',
 
   async getMealsByTimetable(fields: Record<string, string>): Promise<IMeal[]> {
     const { day, time } = fields;
