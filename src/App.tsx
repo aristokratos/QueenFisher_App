@@ -43,7 +43,9 @@ function App() {
           />
           <Route index={true} element={<LandingPage />} />
           <Route path="register" element={<Register />} />
-          <Route path="login" element={<Login />} />
+          <Route path="login" element={<Login onLoginSuccess={function (token: string): void {
+            throw new Error('Function not implemented.');
+          } } />} />
           <Route path="verify-email" element={<VerifyEmail/>}/>
           <Route path="/recipetimetable" element={(<RecipeTimetable />) as React.ReactElement}/>
           <Route path="resetpassword" element={<ResetPassword />} />
@@ -54,7 +56,7 @@ function App() {
           <Route path="user-profile" element={ <UserProfile />} />
           <Route path='recipe' element={<Recipe />} />
           <Route path='recipe-confirm' element={<RecipeConfirmDetails />} />
-          <Route path='create-recipe' element={< CreateRecipe />} />
+          <Route path='create-recipe' element={< CreateRecipe />} /> 
           <Route path='successful' element= {<RecipeSuccess/>} />
           <Route path='warning' element = {<RecipeWarning/>} />
           <Route path='Archive' element= {<ArhiveDashboard/>} />

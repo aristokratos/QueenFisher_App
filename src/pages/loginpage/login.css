@@ -16,6 +16,7 @@
   width: 193px;
   height: 45px;
   margin-top: 53.5px;
+  margin-left: 123.5px;
 }
 
 .login__form {
@@ -23,7 +24,7 @@
   align-items: center;
   flex-direction: column;
   text-align: center;
-  height: 70vh;
+  height: 85vh;
   width: 479px;
   background: #ffffff;
   border-radius: 24px;

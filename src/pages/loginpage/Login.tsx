@@ -1,33 +1,88 @@
-import React from 'react'
+import axios from 'axios';
+import {useState} from 'react';
+
 import { Link } from 'react-router-dom'
 import './login.css'
 import Image from '../../images/queenfisher-logo.png'
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import KeyOutlinedIcon from '@mui/icons-material/KeyOutlined';
 
-const Login = () => {
+interface LoginProps{
+    onLoginSuccess:(token: string) => void;
+}
+
+const Login: React.FC<LoginProps> = ({onLoginSuccess}) => {
+
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const [error, setError] = useState('');
+
+
+    const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+
+        const {name, value} = event.target;
+
+        if(name === 'email') {
+            setEmail(value);
+        }
+        else if(name === 'password') {
+            setPassword(value);
+        }
+    };
+
+    const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+
+        event.preventDefault();
+
+        try{
+            const response = await  axios.post('/api/login', {
+                email,
+                password,
+            });
+
+            onLoginSuccess(response.data.token);
+        }
+        catch (error) {
+            setError('Invalid email or password');
+        }
+    };
+
+
   return (
     <>
     <section className="login">
         <div className="login__container">
             <img src={Image} alt="Login Image"  className='login__image'/>
         </div>
-        <div className="login__form">
+        <div className="login__form" >
             
             <h3 className='login__formwelcome'>Hi, Welcome Back</h3>
+            <form onSubmit={handleSubmit}>
             <div className='login__details'>
             <div className="login__emaildetails">
            <h5>Email</h5>
            <div className='login__emailbox'>
            <EmailOutlinedIcon className='login__icon'/>
-            <input type="text" placeholder="Enter your email" className="login__email" />
+            <input 
+            type="text" 
+            placeholder="Enter your email" 
+            className="login__email" 
+            value={email}
+            onChange={handleInputChange}
+            />
            </div>
            </div>
            <div className='login__passworddetails'>
            <h5>Password</h5>
            <div className="login__passwordbox">
             <KeyOutlinedIcon className='login__icon'/>
-            <input type="text" placeholder="Enter your password" className="login__password" />
+            <input 
+            type="text" 
+            placeholder="Enter your password" 
+            className="login__password" 
+            value={password}
+            onChange={handleInputChange}
+            />
             </div>
             <Link to="/forgetpassword" className='login__forgot'>Forgot Password?</Link>
             </div>
@@ -36,8 +91,11 @@ const Login = () => {
             
 
             <div>
-                <button className='login__button'>Login</button>
+                <button  className='login__button'>Login</button>
+                {error && <p>{error}</p>}
             </div>
+            </form>
+           
 
             <div className='login__account'>
                 <label>Don't have an account?</label>
