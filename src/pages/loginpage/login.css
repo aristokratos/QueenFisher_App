@@ -10,13 +10,14 @@
   align-items: center;
   justify-content: center;
   margin-right: 38px;
+  
 }
 
 .login__image {
   width: 193px;
   height: 45px;
   margin-top: 53.5px;
-  margin-left: 123.5px;
+  margin-left: 13.5px;
 }
 
 .login__form {

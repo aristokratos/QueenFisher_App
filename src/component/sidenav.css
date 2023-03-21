@@ -1,0 +1,21 @@
+.sidebar{
+    
+    position: absolute;
+width: 267px;
+height: 1024px;
+left: 0px;
+top: 0px;
+
+background: #FFFFFF;
+}
+
+/* .top{
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.sidenav-logo{
+    width: 1px;
+}

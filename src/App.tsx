@@ -22,11 +22,17 @@ import CreateRecipe from './components/CreateRecipe/CreateRecipe/createRecipe';
 import RecipeSuccess from './RecipeSuccess/RecipeSuccess';
 import RecipeWarning from './components/RecipeWarning/RecipeWarning';
 import EmailConfirm from './EmailConfirmation/EmailConfirm';
+import CreateTimetable from './Timetable/CreateTimetable';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import SideNav from './component/SideNav';
+
 
 
 function App() {
   return (
     <React.Fragment>
+      <ToastContainer/>
       <Router>
         <Routes>
           <Route
@@ -34,8 +40,13 @@ function App() {
             element={(<TimeTable />) as React.ReactElement}
           />
           <Route
-            path="/create"
-            element={(<CreateTable />) as React.ReactElement}
+            path="/sidenav"
+            element={(<SideNav />) as React.ReactElement}
+          />
+          
+          <Route
+            path="/create-timetable"
+            element={(<CreateTimetable />) as React.ReactElement}
           />
           <Route
             path="/Continue"
@@ -43,9 +54,8 @@ function App() {
           />
           <Route index={true} element={<LandingPage />} />
           <Route path="register" element={<Register />} />
-          <Route path="login" element={<Login onLoginSuccess={function (token: string): void {
-            throw new Error('Function not implemented.');
-          } } />} />
+          
+          <Route path="login" element={<Login />} />
           <Route path="verify-email" element={<VerifyEmail/>}/>
           <Route path="/recipetimetable" element={(<RecipeTimetable />) as React.ReactElement}/>
           <Route path="resetpassword" element={<ResetPassword />} />

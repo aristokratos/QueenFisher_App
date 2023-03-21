@@ -1,5 +1,9 @@
 import axios from 'axios';
 import {useState} from 'react';
+import { useNavigate } from 'react-router-dom';
+
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import { Link } from 'react-router-dom'
 import './login.css'
@@ -7,46 +11,40 @@ import Image from '../../images/queenfisher-logo.png'
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import KeyOutlinedIcon from '@mui/icons-material/KeyOutlined';
 
-interface LoginProps{
-    onLoginSuccess:(token: string) => void;
-}
 
-const Login: React.FC<LoginProps> = ({onLoginSuccess}) => {
+
+const Login: React.FC = () => {
 
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const [error, setError] = useState('');
+    const [errorMessage, setErrorMessage] = useState('');
 
+    const navigate = useNavigate()
+    
 
-    const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const handleLogin= async (event: React.FormEvent<HTMLFormElement>) => {
 
-        const {name, value} = event.target;
-
-        if(name === 'email') {
-            setEmail(value);
-        }
-        else if(name === 'password') {
-            setPassword(value);
-        }
-    };
-
-    const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
-
-        event.preventDefault();
+          event.preventDefault();
 
         try{
-            const response = await  axios.post('/api/login', {
-                email,
-                password,
+            const response = await axios.post ('https://queen-fisher-api.onrender.com/api/Auth/Login', {
+                email, 
+                password
             });
+            localStorage.setItem('token', response.data.token);
 
-            onLoginSuccess(response.data.token);
+            toast.success('You have logged in successfully');
+            navigate('/user-profile');
         }
-        catch (error) {
-            setError('Invalid email or password');
-        }
-    };
 
+        catch (error){
+            setErrorMessage((error as { response: { data: { message: string } } }).response.data.message);
+
+        }
+    }
+
+
+   
 
   return (
     <>
@@ -57,7 +55,7 @@ const Login: React.FC<LoginProps> = ({onLoginSuccess}) => {
         <div className="login__form" >
             
             <h3 className='login__formwelcome'>Hi, Welcome Back</h3>
-            <form onSubmit={handleSubmit}>
+            <form method="post" onSubmit={handleLogin}>
             <div className='login__details'>
             <div className="login__emaildetails">
            <h5>Email</h5>
@@ -68,7 +66,7 @@ const Login: React.FC<LoginProps> = ({onLoginSuccess}) => {
             placeholder="Enter your email" 
             className="login__email" 
             value={email}
-            onChange={handleInputChange}
+            onChange={(event) => setEmail(event.target.value)}
             />
            </div>
            </div>
@@ -77,11 +75,11 @@ const Login: React.FC<LoginProps> = ({onLoginSuccess}) => {
            <div className="login__passwordbox">
             <KeyOutlinedIcon className='login__icon'/>
             <input 
-            type="text" 
+            type="password" 
             placeholder="Enter your password" 
             className="login__password" 
             value={password}
-            onChange={handleInputChange}
+            onChange={(event) =>setPassword(event.target.value)}
             />
             </div>
             <Link to="/forgetpassword" className='login__forgot'>Forgot Password?</Link>
@@ -92,7 +90,7 @@ const Login: React.FC<LoginProps> = ({onLoginSuccess}) => {
 
             <div>
                 <button  className='login__button'>Login</button>
-                {error && <p>{error}</p>}
+                
             </div>
             </form>
            

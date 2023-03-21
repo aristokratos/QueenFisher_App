@@ -22,7 +22,7 @@ const TimeTable: React.FC = () => {
     
         <button className={classes.button} onClick={(e)=>{
           e.preventDefault();
-          navigate("/create")
+          navigate("/create-timetable")
         }}>Create Timetable</button>
       </div>
     </div>
