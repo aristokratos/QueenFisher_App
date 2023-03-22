@@ -1,10 +1,4 @@
 import '../components/UserProfile.css';
-<<<<<<< HEAD
-import { useState } from 'react';
-import Navbar from '../component/Navbar';
-
-=======
->>>>>>> 0e5f4c542ea1b8d8f714aea1d95d650775e47c2f
 
 function UserProfile() {
   return (

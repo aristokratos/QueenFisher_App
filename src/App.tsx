@@ -23,16 +23,10 @@ import CreateRecipe from './components/CreateRecipe/CreateRecipe/createRecipe';
 import RecipeSuccess from './RecipeSuccess/RecipeSuccess';
 import RecipeWarning from './components/RecipeWarning/RecipeWarning';
 import EmailConfirm from './EmailConfirmation/EmailConfirm';
-<<<<<<< HEAD
-import CreateTimetable from './Timetable/CreateTimetable';
-import { ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-import SideNav from './component/SideNav';
-
-
-=======
 import EditTimetable from './components/EditTimetable/EditTimetable';
->>>>>>> 0e5f4c542ea1b8d8f714aea1d95d650775e47c2f
+import { ToastContainer } from 'react-toastify';
+import CreateTimetable from './Timetable/CreateTimetable';
+import SideNav from './component/SideNav';
 
 function App() {
   return (
@@ -81,18 +75,6 @@ function App() {
           <Route path="resetpassword" element={<ResetPassword />} />
           <Route path="update-password" element={<UpdatePassword />} />
           <Route path="forgetpassword" element={<ForgetPassword />} />
-<<<<<<< HEAD
-          <Route path="usertable" element={<UserPopulatedTable/>} />
-          <Route path="mealtable" element={<MealPopulatedTable/>}/>
-          <Route path="user-profile" element={ <UserProfile />} />
-          <Route path='recipe' element={<Recipe />} />
-          <Route path='recipe-confirm' element={<RecipeConfirmDetails />} />
-          <Route path='create-recipe' element={< CreateRecipe />} /> 
-          <Route path='successful' element= {<RecipeSuccess/>} />
-          <Route path='warning' element = {<RecipeWarning/>} />
-          <Route path='Archive' element= {<ArhiveDashboard/>} />
-          <Route path='EmailConfirm' element= {<EmailConfirm/>} />
-=======
           <Route path="usertable" element={<UserPopulatedTable />} />
           <Route path="mealtable" element={<MealPopulatedTable />} />
           <Route path="user-profile" element={<UserProfile />} />
@@ -103,7 +85,6 @@ function App() {
           <Route path="warning" element={<RecipeWarning />} />
           <Route path="Archive" element={<ArhiveDashboard />} />
           <Route path="EmailConfirm" element={<EmailConfirm />} />
->>>>>>> 0e5f4c542ea1b8d8f714aea1d95d650775e47c2f
         </Routes>
       </Router>
     </React.Fragment>

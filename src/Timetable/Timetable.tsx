@@ -29,22 +29,7 @@ const TimeTable: React.FC = () => {
           </button>
         </div>
       </div>
-<<<<<<< HEAD
-        <img src={opps} alt="opps" />
-        <h1>Opps...!</h1>
-
-        <p>You have not created any timetable yet.
-        Click on the button below to create a timetable.</p>
-    
-        <button className={classes.button} onClick={(e)=>{
-          e.preventDefault();
-          navigate("/create-timetable")
-        }}>Create Timetable</button>
-      </div>
-    </div>
-=======
     </DashboardLayout>
->>>>>>> 0e5f4c542ea1b8d8f714aea1d95d650775e47c2f
   );
 };
 
