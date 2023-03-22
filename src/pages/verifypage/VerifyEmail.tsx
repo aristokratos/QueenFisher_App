@@ -19,7 +19,7 @@ const VerifyEmail = () => {
             <p>Hi there! Use the link below to verify your email and start enjoying Queenfisher</p>
         </div>
         <div>
-        <Link to="" className='verify__email'>Verify Email</Link>
+        <Link to="/login" className='verify__email'>Verify Email</Link>
         </div>
         
     </div>

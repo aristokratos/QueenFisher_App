@@ -3,6 +3,7 @@ import '../components/UserProfile.css';
 function UserProfile() {
   return (
     <>
+     
       <h1 className="A-setting">Account Setting</h1>
       <div className="A-border"></div>
       <div className="A-container">

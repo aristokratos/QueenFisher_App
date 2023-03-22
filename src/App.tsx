@@ -24,10 +24,14 @@ import RecipeSuccess from './RecipeSuccess/RecipeSuccess';
 import RecipeWarning from './components/RecipeWarning/RecipeWarning';
 import EmailConfirm from './EmailConfirmation/EmailConfirm';
 import EditTimetable from './components/EditTimetable/EditTimetable';
+import { ToastContainer } from 'react-toastify';
+import CreateTimetable from './Timetable/CreateTimetable';
+import SideNav from './component/SideNav';
 
 function App() {
   return (
     <React.Fragment>
+      <ToastContainer/>
       <Router>
         <Routes>
           <Route
@@ -35,8 +39,13 @@ function App() {
             element={(<TimeTable />) as React.ReactElement}
           />
           <Route
-            path="/create"
-            element={(<CreateTable />) as React.ReactElement}
+            path="/sidenav"
+            element={(<SideNav />) as React.ReactElement}
+          />
+          
+          <Route
+            path="/create-timetable"
+            element={(<CreateTimetable />) as React.ReactElement}
           />
           <Route
             path="/edit"
@@ -48,6 +57,7 @@ function App() {
           />
           <Route index={true} element={<LandingPage />} />
           <Route path="register" element={<Register />} />
+          
           <Route path="login" element={<Login />} />
           <Route path="verify-email" element={<VerifyEmail />} />
           <Route
