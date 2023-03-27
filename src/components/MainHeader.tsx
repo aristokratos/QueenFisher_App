@@ -20,7 +20,7 @@ const MainHeader: React.FC<MainHeaderProps> = () => {
             preferences such as diet type, health condition, age, budget,
             geography.
           </p>
-          <Link to="/login" className="btn lg">
+          <Link to="/register" className="btn lg">
             Get Started <FiExternalLink />
           </Link>
         </div>

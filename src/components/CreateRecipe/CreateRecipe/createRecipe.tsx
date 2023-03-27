@@ -115,20 +115,14 @@ const CreateRecipe: React.FC = () => {
               <label>
                 {' '}
                 Ingredients:
-                <select
+                <input
                   className={styles['ingredients']}
                   name="ingredients"
                   value={formData.ingredients || ''}
                   onChange={handleInputChange}
                   required
-                >
-                  <option value=""></option>
-                  {mealTypeOptions.map((option) => (
-                    <option key={option} value={option}>
-                      {option}
-                    </option>
-                  ))}
-                </select>
+                />
+                 
               </label>
             </div>
           </div>

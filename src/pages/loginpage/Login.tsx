@@ -31,10 +31,12 @@ const Login: React.FC = () => {
                 email, 
                 password
             });
-            localStorage.setItem('token', response.data.token);
+            
+            
+            localStorage.setItem('token', response.data.data.token);
 
             toast.success('You have logged in successfully');
-            navigate('/user-profile');
+            navigate('/timetable');
         }
 
         catch (error){

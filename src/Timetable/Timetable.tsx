@@ -22,7 +22,7 @@ const TimeTable: React.FC = () => {
             className="bg-[#FFF6ED] text-[#9E2300] border-2 border-[#FEE9CA] rounded-md px-10 py-3"
             onClick={(e) => {
               e.preventDefault();
-              navigate('/create');
+              navigate('/create-timetable');
             }}
           >
             Create

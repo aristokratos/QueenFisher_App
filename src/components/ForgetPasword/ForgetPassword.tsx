@@ -46,7 +46,7 @@ const ForgetPassword = () => {
           <h2 className="headername">Queenfisher</h2>
         </div>
         <div className="wrappers">
-          <div className="title">Forget Password</div>
+          <div className="title">Forgot Password</div>
           <h3>
             Enter the email associated with your account and we'll send an email
             with instruction to reset your password
@@ -79,7 +79,7 @@ const ForgetPassword = () => {
                   Reset Password
                 </button>
               </div>
-              <Link className="link" to="./">
+              <Link className="link" to="/login">
                 Back To Login
               </Link>
             </form>
