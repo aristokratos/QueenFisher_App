@@ -1,21 +1,101 @@
 .sidebar{
-    
-    position: absolute;
-width: 267px;
-height: 1024px;
-left: 0px;
-top: 0px;
-
-background: #FFFFFF;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 267px;
+    height:100vh;
+    background: #FFFFFF;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+    z-index: 1;
 }
 
-/* .top{
-    width: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
+.sidebar-container{
+    height: 14px;
+    margin-top: 24px;
+
+}
 
 .sidenav-logo{
-    width: 1px;
+    width: 186px;
+    height: 44px;
+    margin-left: 24px;
+    
 }
+
+.sidebar-items{
+    margin-top: 100px;
+    padding-left: 24px;
+    
+}
+
+.sidebar-element{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 6px;
+    gap: 8px;
+    background: #772917;
+    border-radius: 6px;
+    margin-right: 28px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.15px;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+    
+}
+
+.sidebar-elementother{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 6px;
+    gap: 8px;
+    border-radius: 6px;
+    margin-right: 28px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.15px;
+    
+    margin-bottom: 30px;
+}
+
+.sidebar-logout{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 6px;
+    gap: 8px;
+    border-radius: 6px;
+    margin-right: 28px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.15px;
+    margin-top: 15px;
+    background: #FEF6EE;
+    color: #772917;
+
+
+}
+
+
+

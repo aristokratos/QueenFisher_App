@@ -8,11 +8,15 @@ import FirstFooter from '../../components/FirstFooter';
 
 import LastFooter from '../../components/LastFooter';
 import LandingNavbar from '../../components/LandingNavbar';
+import SideNav from '../../component/SideNav';
+import Sidebar from '../../components/Sidebar/Sidebar';
 
 const LandingPage: React.FC = () => {
   return (
     <>
+    
       <LandingNavbar/>
+      
       <MainHeader />
       <MainHeader2 />
       <Values />

@@ -27,6 +27,10 @@ import EditTimetable from './components/EditTimetable/EditTimetable';
 import { ToastContainer } from 'react-toastify';
 import CreateTimetable from './Timetable/CreateTimetable';
 import SideNav from './component/SideNav';
+import RecipePage from './pages/Recipe/RecipePage';
+import ArchivePage from './pages/archivepage/ArchivePage';
+import TimetablePage from './pages/timetablepage/TimetablePage';
+import UserPage from './pages/userpage/UserPage';
 
 function App() {
   return (
@@ -36,7 +40,7 @@ function App() {
         <Routes>
           <Route
             path="/timetable"
-            element={(<TimeTable />) as React.ReactElement}
+            element={(<TimetablePage />) as React.ReactElement}
           />
           <Route
             path="/sidenav"
@@ -52,7 +56,7 @@ function App() {
             element={(<EditTimetable />) as React.ReactElement}
           />
           <Route
-            path="/Continue"
+            path="/Continue/:id"
             element={(<ConfirmDetails />) as React.ReactElement}
           />
           <Route index={true} element={<LandingPage />} />
@@ -74,16 +78,16 @@ function App() {
           />
           <Route path="resetpassword" element={<ResetPassword />} />
           <Route path="update-password" element={<UpdatePassword />} />
-          <Route path="forgetpassword" element={<ForgetPassword />} />
+          <Route path="forgotpassword" element={<ForgetPassword />} />
           <Route path="usertable" element={<UserPopulatedTable />} />
           <Route path="mealtable" element={<MealPopulatedTable />} />
-          <Route path="user-profile" element={<UserProfile />} />
-          <Route path="recipe" element={<Recipe />} />
+          <Route path="user-profile" element={<UserPage />} />
+          <Route path="recipe" element={<RecipePage/>} />
           <Route path="recipe-confirm" element={<RecipeConfirmDetails />} />
           <Route path="create-recipe" element={<CreateRecipe />} />
           <Route path="successful" element={<RecipeSuccess />} />
           <Route path="warning" element={<RecipeWarning />} />
-          <Route path="Archive" element={<ArhiveDashboard />} />
+          <Route path="Archive" element={<ArchivePage/>} />
           <Route path="EmailConfirm" element={<EmailConfirm />} />
         </Routes>
       </Router>

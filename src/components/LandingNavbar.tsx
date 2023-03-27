@@ -27,10 +27,10 @@ const LandingNavbar = () => {
           </li>
         </ul>
         <div className="landingnavbar__link">
-          <a href="" className="landingnavbar__d">
+          <a href="/login" className="landingnavbar__d">
             Login
           </a>
-          <a href="" className="landingnavbar__e">
+          <a href="/register" className="landingnavbar__e">
             Get Started
           </a>
         </div>

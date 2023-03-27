@@ -2,6 +2,7 @@ import React from 'react';
 import classes from './Recipe.module.css';
 import opps from '../assets/opps.png';
 import { Link } from 'react-router-dom';
+import SideNav from '../component/SideNav';
 
 
 
@@ -10,6 +11,7 @@ import { Link } from 'react-router-dom';
 
 const Recipe: React.FC = () => {
     return ( 
+
         <div>
         <div className={classes.contentDetail}>
         <div className='header-class'>
