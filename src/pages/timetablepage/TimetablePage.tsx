@@ -1,14 +1,18 @@
-import React from 'react'
-import SideNav from '../../component/SideNav'
-import TimeTable from '../../Timetable/Timetable'
+import React from 'react';
+import SideNavProps from '../../component/SideNav';
+import TimeTable from '../../Timetable/Timetable';
 
 const TimetablePage = () => {
   return (
     <>
-        <SideNav/>
-        <TimeTable/>
+      <SideNavProps
+        onClose={function (): void {
+          throw new Error('Function not implemented.');
+        }}
+      />
+      <TimeTable />
     </>
-  )
-}
+  );
+};
 
-export default TimetablePage
+export default TimetablePage;

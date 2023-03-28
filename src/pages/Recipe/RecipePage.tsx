@@ -1,14 +1,18 @@
-import React from 'react'
-import SideNav from '../../component/SideNav'
-import Recipe from '../../RecipeDashboard/recipe'
+import React from 'react';
+import SideNavProps from '../../component/SideNav';
+import Recipe from '../../RecipeDashboard/recipe';
 
 const RecipePage = () => {
   return (
     <>
-    <SideNav/>
-      <Recipe/>
+      <SideNavProps
+        onClose={function (): void {
+          throw new Error('Function not implemented.');
+        }}
+      />
+      <Recipe />
     </>
-  )
-}
+  );
+};
 
-export default RecipePage
+export default RecipePage;

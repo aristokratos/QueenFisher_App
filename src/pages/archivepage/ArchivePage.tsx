@@ -1,16 +1,18 @@
-import React from 'react'
-import ArhiveDashboard from '../../ArhiveDashboard/ArhiveDashboard'
-import SideNav from '../../component/SideNav'
+import React from 'react';
+import ArhiveDashboard from '../../ArhiveDashboard/ArhiveDashboard';
+import SideNavProps from '../../component/SideNav';
 
 const ArchivePage = () => {
   return (
     <>
-    <SideNav/>
-    <ArhiveDashboard/>
-    
+      <SideNavProps
+        onClose={function (): void {
+          throw new Error('Function not implemented.');
+        }}
+      />
+      <ArhiveDashboard />
     </>
-    
-  )
-}
+  );
+};
 
-export default ArchivePage
+export default ArchivePage;
