@@ -26,3 +26,6 @@ dist-ssr
 package.json
 
 
+
+# Local Netlify folder
+.netlify
